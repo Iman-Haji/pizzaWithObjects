@@ -1,3 +1,47 @@
+class Pizza {
+  constructor(name, toppings, size, basePrice) {
+    this.name = name;
+    this.pizzaToppings = pizzaToppings;
+    this.size = size;
+    this.basePrice = basePrice;
+  }
+  deletePizzaToppings(pizzaToppings) {
+    for (let item of this.pizzaToppings) {
+      if (item === toppings) {
+        let i = this.pizzaToppings;
+        console.log(i)
+      }
+    }
+  }
+
+
+  setSize(size) {
+    this.size = size;
+  }
+  toppingsForPizza(pizzaToppings) {
+    this.pizzaToppings = pizzaToppings;
+  }
+
+  returnPizzaToppings() {
+    return this.pizzaToppings;
+  }
+
+  returnPizzaPrice() {
+    return this.basePrice;
+
+  }
+  returnCustomerName() {
+    return this.name;
+  }
+};
+
+
+
+//priceForExtraTopping = 1;
+//freeToppingsAmount = 4;
+
+
+
 // Write code which models a pizza as a class.
 //Pizza has at least following properties: name, toppings, base price for a small pizza. Pizza has also a functions, which calculates it’s price.
 
@@ -9,10 +53,9 @@
 //  }
 //}
 
-priceForExtraTopping = 1;
-freeToppingsAmount = 4;
 
 
+/*
 class Pizza {
   name = "";
   toppings = [];
@@ -32,17 +75,9 @@ class Pizza {
       }
     }
   }
-
-
-
 }
 
-
-
-
-
-
-class Pizza {
+class Pizzaa {
   constructor(name, toppings, basePrice) {
     this.name = name;
     this.toppings = toppings;
@@ -61,7 +96,9 @@ class Pizza {
   }
 }
 
-/*class Pizza {
+
+
+class Pizza {
   name = pizzaName;
   topping = [];
   basePrice = 0; // In cents
@@ -72,8 +109,9 @@ class Pizza {
 
     return this.basePrice;
   }
-}*/
+}
 
+*/
 
 //CONSTRUCTOR CAN BE USED. WE CAN MAKE THE PIZZAS USING CONST
 
@@ -83,11 +121,6 @@ class Pizza {
 //  name: 
 //}, 10.30)
 
-
-
 //const margherita = new Pizza ("Margherita Pizza",[ {
 //pizzaName: "Cheese", price: 1.99
-//}]);
-//
 //console.log(margherita);
-//

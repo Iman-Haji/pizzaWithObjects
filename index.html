@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Array exercises</title>
+    <title>Pizza with Objects</title>
     <script src="objects.js" defer></script>
   </head>
   <body>
-    <!--Task 1-->
-    <h2>Task 1</h2>
-    <h2>Task 2</h2>
-    <h2>Task 3</h2>
-    <h2>Task 4</h2>
-    <h2>Task 5</h2>
-    <h2>Task 6</h2>
-    <h2>Task 7</h2>
-    <h2>Task 8</h2>
-    <h2>Task 9</h2>
-    <h2>Task 10</h2>
-    <h2>Task 11</h2>
-    <p id="task11"></p>
-    <link rel="stylesheet" href="style.css" />
-  </body>
+  <h1>Iman's Pizzeria!</h1>
+  <h4>Welcome to my tasty Pizzeria, I hope you enjoy our freshly cooked and served pizzas! Order below...</h4>
+  
+  <form action="">
+    <h2>Pizza Size:</h2>
+    
+    <div class="pizzaSize">
+      <input type="radio" name="size" id="small"/>
+      <label for="small">SMALL PIZZA</label>
+      <input type="radio" name="size" id="medium"/>
+      <label for="small">MEDIUM PIZZA (extra 2€)</label>
+      <input type="radio" name="size" id="large"/>
+      <label for="small">LARGE PIZZA(extra 4€)</label>
+    </div>
+    
+    <h2>Toppings (extra):</h2>
+    <div class="pizzaToppings">
+      <input type="checkbox" name="toppings" id="mediterranianOlives">
+      <label for="mediterranianOlives">Mediterranian olives</label>
+      <input type="checkbox" name="toppings" id="mozzarella">
+      <label for="mozzarella">Mozzarella</label>
+      <input type="checkbox" name="toppings" id="extraCheese">
+      <label for="extraCheese">Extra Cheese (Parmeggiano Reggiano)</label>
+      <input type="checkbox" name="toppings" id="cannedTomatoes">
+      <label for="cannedTomatoes">Canned Tomatoes</label>
+      <input type="checkbox" name="toppings" id="garlic">
+      <label for="garlic">Garlic</label>
+      <input type="checkbox" name="toppings" id="pineapple">
+      <label for="pineapple">Pineapple</label>
+    </div>
+    
+    <h2></h2>
+  </form>
+  
+  <link rel="stylesheet" href="style.css" />
+</body>
 </html>

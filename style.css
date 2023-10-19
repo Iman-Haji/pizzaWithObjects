@@ -1,3 +1,9 @@
 body {
   background-color: rgb(148, 123, 86);
 }
+
+
+.pizzaSize {
+  font-size: x-large;
+  padding: 30px;
+}
