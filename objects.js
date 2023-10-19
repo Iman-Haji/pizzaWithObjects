@@ -9,34 +9,37 @@
 //  }
 //}
 
+priceForExtraTopping = 1;
+freeToppingsAmount = 4;
+
+
 class Pizza {
-  name = pizzaName;
-  topping = [];
-  basePrice = 0; // In cents
+  name = "";
+  toppings = [];
+  basePrice = 5;
   size = 2;
-
-  getPrice() {
-    return basePrice; 
-
-    return this.basePrice;
+  constructor(name, toppings, size, basePrice) {
+    this.name = name;
+    this.toppings = toppings;
+    this.size = size;
+    this.basePrice = basePrice;
+    this.calculatePrice = function () {
+      const extraToppings = this.toppings.length - freeToppingsAmount;
+      if (extraToppings <= 0) {
+        return (this.calculatePrice = this.basePrice);
+      } else {
+        return (this.calculatePrice = this.basePrice + extraToppings * priceForExtraTopping);
+      }
+    }
   }
+
+
+
 }
-//CONSTRUCTOR CAN BE USED. WE CAN MAKE THE PIZZAS USING CONST
-
-//const margherita = new Pizza ();
-//const pepperoniPizza = new Pizza ();
-//margherita.name = ('magherita', {
-//  name: 
-//}, 10.30)
 
 
 
-//const margherita = new Pizza ("Margherita Pizza",[ {
-//pizzaName: "Cheese", price: 1.99
-//}]);
-//
-//console.log(margherita);
-//
+
 
 
 class Pizza {
@@ -57,3 +60,34 @@ class Pizza {
     return totalPrice;
   }
 }
+
+/*class Pizza {
+  name = pizzaName;
+  topping = [];
+  basePrice = 0; // In cents
+  size = 2;
+
+  getPrice() {
+    return basePrice;
+
+    return this.basePrice;
+  }
+}*/
+
+
+//CONSTRUCTOR CAN BE USED. WE CAN MAKE THE PIZZAS USING CONST
+
+//const margherita = new Pizza ();
+//const pepperoniPizza = new Pizza ();
+//margherita.name = ('magherita', {
+//  name: 
+//}, 10.30)
+
+
+
+//const margherita = new Pizza ("Margherita Pizza",[ {
+//pizzaName: "Cheese", price: 1.99
+//}]);
+//
+//console.log(margherita);
+//
